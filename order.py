@@ -1,15 +1,24 @@
-print("Welcome to my Cafe ")
 
-name=input("Whats your Name?")
 
-print("Hello " + name + ", Thank you so much for comming.")
+from re import I
 
-menu="bbq wings, roast chicken ,biryani , chai"
 
-print(name + " what would you like from our menu \n" + menu)
+
+
+name=input("Whats your Name Sir")
+
+print( name + " ,welcome to Starbucks")
+
+menu="Latte, Espresso ,Cappucino , Black Coffe"
+
+print( name + " What will you like to try from our menu? \n" + menu )
 
 order=input()
 
-print(name + " your " + order + " will be served in an hour ")
+quantity=input("How Much " +  order  + " you want " + name  )
 
-print("how was the " +  order + name)
+price = 30
+
+total = price * quantity
+
+print(total)
